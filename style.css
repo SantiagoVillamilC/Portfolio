@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 html{
     margin: 0;
     padding: 0;
@@ -6,6 +8,8 @@ html{
 :root{
     --light-body-color : #F3F5F6;
     --light-main-color: #FFFFFF;
+
+    --blue-text: #4361EE;
 }
 body{
     background-color: var(--light-body-color);
@@ -15,7 +19,7 @@ body{
 
 header{
     background-color: var(--light-main-color);
-    height: 77vh;
+    height: 70vh;
     margin: 2.5% 5.5%;
     border-radius: 1.5rem;
     color: var();
@@ -23,9 +27,11 @@ header{
 
     display: grid;
     grid-template-columns: 60% 40%;
-    padding: 2%;
+    padding: 4%;
 
     transition: 0.5s;
+
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 /* .container-theme{
@@ -35,23 +41,41 @@ header{
     align-items: center;
 } */
 .container-left-side-header{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-around; */
+}
+.hero-text{
+    font-size: 3em;
+    margin: 0;
+}
+.hero-imp-text{
+    color: var(--blue-text);
 }
 .container-hero-header{
     height: 70%;
+    position: relative;
+
+    top: 25%;
+}
+.container-hero-header h1{
+    margin-bottom: 0;
 }
 #mode-icon{
     width: 30px;
     cursor: pointer;
+
+    position: relative;
+    top: 0%;
     /* font-size: 2em;
     color: yellow; */
 }
 
 .social-media{
-    width: 50%;
-    display: grid;
+    width: 15%;
+    /* display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
+    justify-items: center; */
+    display: flex;
+    justify-content: space-between;
 }
