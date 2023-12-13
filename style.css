@@ -1,23 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-html{
+html {
     margin: 0;
     padding: 0;
 }
 
-:root{
-    --light-body-color : #F3F5F6;
+:root {
+    --light-body-color: #F3F5F6;
     --light-main-color: #FFFFFF;
 
-    --blue-text: #4361EE;
+    --blue: #4361EE;
+    --light-blue: #4CC9F0;
+    --dark-blue: #3A0CA3;
+    --red: #F21B49;
 }
-body{
+
+body {
     background-color: var(--light-body-color);
 
     transition: 1s;
 }
 
-header{
+header {
     background-color: var(--light-main-color);
     height: 70vh;
     margin: 2.5% 5.5%;
@@ -40,28 +45,42 @@ header{
     justify-items: center;
     align-items: center;
 } */
-.container-left-side-header{
-    /* display: flex;
+/* .container-left-side-header{
+    display: flex;
     flex-direction: column;
-    justify-content: space-around; */
-}
-.hero-text{
+    justify-content: space-around;
+} */
+.hero-text {
     font-size: 3em;
     margin: 0;
 }
-.hero-imp-text{
-    color: var(--blue-text);
+
+.hero-imp-text {
+    color: var(--blue);
 }
-.container-hero-header{
+
+.container-hero-header {
     height: 70%;
     position: relative;
-
+    line-height: 1;
     top: 25%;
 }
-.container-hero-header h1{
-    margin-bottom: 0;
+
+.container-hero-header p {
+    font-size: 1.5em;
 }
-#mode-icon{
+
+.roboto-text {
+    font-family: 'Roboto', sans-serif;
+}
+
+#big-hero-text {
+    /* margin-top: -4%; */
+    letter-spacing: -0.01em;
+    font-size: 5em;
+}
+
+#mode-icon {
     width: 30px;
     cursor: pointer;
 
@@ -71,11 +90,38 @@ header{
     color: yellow; */
 }
 
-.social-media{
-    width: 15%;
-    /* display: grid;
+.social-media {
+    margin-left: -1%;
+    width: 25%;
+    height: auto;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-items: center; */
-    display: flex;
+    justify-items: center;
+    align-items: center;
+    /* display: flex;
     justify-content: space-between;
+    align-items: center; */
+    /* gap: 1%; */
+}
+
+.social-media i {
+    font-size: 1.7em;
+    color: var(--dark-blue);
+    transform-origin: center;
+    padding: 5px 7px;
+
+    &:hover {
+        background-color: var(--dark-blue);
+        /* padding: 15%; */
+        border-radius: 15%;
+        color: white;
+        transition: 0.3s all ease-in-out;
+        /* font-size: 2.5em; */
+        transform: scale(1.5);
+        cursor: pointer;
+    }
+
+    &:not(hover) {
+        transition: 0.3s all ease-in-out;
+    }
 }
