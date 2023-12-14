@@ -4,6 +4,8 @@
 html {
     margin: 0;
     padding: 0;
+
+    overflow-x: hidden;
 }
 
 :root {
@@ -26,7 +28,7 @@ header {
     background-color: var(--light-main-color);
     height: 70vh;
     margin: 2.5% 5.5%;
-    border-radius: 1.5rem;
+    border-radius: 1.7rem;
     color: var();
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
@@ -124,4 +126,23 @@ header {
     &:not(hover) {
         transition: 0.3s all ease-in-out;
     }
+}
+
+nav{
+    background-color: var(--blue);
+    height: 10vh;
+    margin: 2.5% 5.5%;
+    border-radius: 1.7rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#rotado{
+    rotate: -90deg;
+}
+section{
+    height: 1000vh;
 }
