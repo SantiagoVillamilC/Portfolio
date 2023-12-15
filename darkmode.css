@@ -8,6 +8,9 @@
     --dark-body-color : #141414;
     --dark-main-color: #1C1C1C;
 
+    --light-body-color: #F3F5F6;
+    --light-main-color: #FFFFFF;
+
     --blue: #4361EE;
     --light-blue: #4CC9F0;
     --red: #F21B49;
@@ -42,4 +45,8 @@ body.darkmode{
     &:not(hover){
         transition: 0.3s all ease-in-out;
     }
+}
+
+.darkmode .box-about,.darkmode .box-tech,.darkmode .box-experience,.darkmode .box-projects,.darkmode .box-actual{
+    background-color: var(--dark-main-color);
 }
