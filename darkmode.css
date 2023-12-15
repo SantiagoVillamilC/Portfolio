@@ -50,3 +50,7 @@ body.darkmode{
 .darkmode .box-about,.darkmode .box-tech,.darkmode .box-experience,.darkmode .box-projects,.darkmode .box-actual{
     background-color: var(--dark-main-color);
 }
+
+.darkmode .box-about,.darkmode .box-contact,.darkmode .box-tech,.darkmode .box-experience,.darkmode .box-projects,.darkmode .box-actual{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
