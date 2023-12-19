@@ -25,6 +25,7 @@ body.darkmode{
 
 .darkmode header{
     background-color: var(--dark-main-color);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .darkmode .social-media i{
@@ -47,10 +48,19 @@ body.darkmode{
     }
 }
 
-.darkmode .box-about,.darkmode .box-tech,.darkmode .box-experience,.darkmode .box-projects,.darkmode .box-actual{
+.darkmode .box-about,.darkmode .box-tech,.darkmode .box-experience,.darkmode .box-projects,.darkmode .box-actual, .darkmode .box-contact{
     background-color: var(--dark-main-color);
 }
 
 .darkmode .box-about,.darkmode .box-contact,.darkmode .box-tech,.darkmode .box-experience,.darkmode .box-projects,.darkmode .box-actual{
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+.darkmode .wrapper .tooltip {
+    background: var(--light-main-color);
+    color: var(--dark-main-color);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  }
+  .darkmode .wrapper .tooltip::before {
+    background: var(--light-main-color);
+  }
