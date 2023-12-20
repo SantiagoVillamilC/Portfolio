@@ -224,7 +224,66 @@ header {
     grid-column: auto/span 5;
     grid-row: auto/span 4;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    padding: 2rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    
+    /* font-size: 1.1em; */
 }
+.study-container{
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-rows: repeat(2, auto);
+    gap: 1rem;
+    margin-top: auto;
+    
+}
+.study-container:nth-child(1){
+    border-radius: 1.5rem;   
+}
+.study-box-contain{
+    padding: 0.1rem 0.1rem 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    text-align: center;
+    border-radius: 1.5rem;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+
+    &:hover{
+        background-color: var(--blue);
+        color: var(--light-main-color);
+        border-radius: 10px;
+        transform: scale(1.1);
+        transition: all 0.2s ease;
+
+        &.study-box-contain span{
+            background-color: var(--light-main-color);
+            border-radius: 1.2rem;
+            padding: 0.1rem;
+            color: var(--dark-main-color);
+            /* transform: scale(2); */
+        }
+    }
+
+    &:not(:hover){
+        transition: all 0.3s ease-in-out;
+    }
+}
+.box-about p {
+    margin: 0;
+}
+.study-box-contain p{
+    margin: 1.5%;
+}
+/* .study-box-contain:nth-child(1) {
+    border-radius: 1.5rem 0 0 1.5rem;
+}
+.study-box-contain:nth-child(2) {
+    border-radius: 0 1.5rem 1.5rem 0;
+} */
 
 .box-tech{
     background-color: var(--light-main-color);
