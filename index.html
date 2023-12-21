@@ -113,8 +113,6 @@
                 <div class="bubble" id="bubble-vite"><img class="image-bubble" src="assets/icons/vite-svgrepo-com.svg"
                         alt="vite"></div>
             </li>
-
-
         </div>
         <div class="box-contact">
             Contacto
@@ -128,18 +126,21 @@
         <div class="box-actual">
             <p class="title-boxes">Actualmente</p>
             <div class="actual-tech-container">
-                <div class="card-first-tech card-tech">
+                <div class="card-first-tech card-tech" onmouseover="hoverCard(this)" onmouseout="leaveCard()">
                     <span class="actual-tech-text">Profundizando en JavaScript</span>
                     <img class="image-bubble image-dissapear" src="assets/icons/javascript-svgrepo-com.svg" alt="Javascript">
                 </div>
-                <div class="card-second-tech card-tech roboto-text">
-                    <span>Aprendiendo React</span>
+                
+                <div class="card-second-tech card-tech roboto-text" onmouseover="hoverCard(this)" onmouseout="leaveCard()">
+                    <span class="actual-tech-text">Aprendiendo React</span>
                     <img class="image-bubble" src="assets/icons/react-svgrepo-com.svg" alt="React JS">
                 </div>
-                <div class="card-third-tech card-tech roboto-text">
-                    <span>Entendiendo Astro</span>
+                
+                <div class="card-third-tech card-tech roboto-text" onmouseover="hoverCard(this)" onmouseout="leaveCard()">
+                    <span class="actual-tech-text">Entendiendo Astro</span>
                     <img src="" alt="Astro">
                 </div>
+                                                                        
             </div>
         </div>
     </section>

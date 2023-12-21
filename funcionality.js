@@ -31,3 +31,25 @@ function load(){
 function store(value){
     localStorage.setItem('darkmode', value);
 };
+
+
+let cards = document.querySelectorAll('.card-tech');
+
+cards.forEach(card => {
+    card.addEventListener('mouseover', function() {
+        this.classList.add('hovered');
+        document.body.classList.remove('no-hover');
+        cards.forEach(otherCard => {
+            if (otherCard !== this) {
+                otherCard.classList.remove('hovered');
+            }
+        });
+    });
+
+    card.addEventListener('mouseout', function() {
+        this.classList.remove('hovered');
+        if (!cards.some(card => card.classList.contains('hovered'))) {
+            document.body.classList.add('no-hover');
+        }
+    });
+});
