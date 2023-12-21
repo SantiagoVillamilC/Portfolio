@@ -613,7 +613,6 @@ header {
     position: relative;
     display: inline-block;
 
-
     background-color: #F7DF1E;
     height: 100%;
 
@@ -626,17 +625,25 @@ header {
     border-radius: 1.5rem 0 0 1.5rem;
 
     transform-origin: left center;
+    font-size: 1.5rem;
+    /* color: var(--light-main-color); */
 
     &:hover {
         background-color: #F7DF1E;
 
+        box-shadow: 0 0 15px rgba(247, 223, 30, 0.8);
+
         /* transform: scaleX(1.1); */
-        z-index: 1;
+        /* z-index: 1; */
         transition: all 0.4s ease;
+        
+        &.image-dissapear{
+            opacity: 0;
+        }
     }
 
     &:not(:hover) {
-        transform: scaleX(1);
+        /* transform: scaleX(1); */
         transition: all 0.4s ease;
     }
 }
@@ -665,8 +672,18 @@ header {
 
 .card-first-tech:hover .actual-tech-text {
     opacity: 1;
+    transition: all 0.2s ease;
 }
 
+/* .card-first-tech:hover img {
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+
+    &:not(:hover){
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+} */
 
 .card-second-tech {
     background-color: #4AD5FF;
