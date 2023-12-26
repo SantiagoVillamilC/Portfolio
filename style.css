@@ -229,17 +229,42 @@ header {
     padding: 2rem 1rem 1rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     /* font-size: 1.1em; */
 }
 
 .study-container {
-    display: grid;
-    /* grid-template-columns: repeat(2, 1fr); */
-    grid-template-rows: repeat(2, auto);
-    gap: 1rem;
-    margin-top: auto;
+    margin-top: 1rem;
+    
+    /* display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(3, 5rem);
+    grid-auto-rows: 5rem;
+    grid-gap: 1rem; */
 
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-auto-rows: 5rem;
+    grid-template-rows: repeat(3, 5rem);
+    grid-gap: 1rem;
+}
+
+.card-about{
+    grid-column: auto/span 2;
+    grid-row: auto/span 3;
+
+    
+}
+
+.school-card{
+    grid-column: auto/span 2;
+    grid-row: auto;
+}
+
+.uni-card{
+    grid-column: 3/span 2;
+    grid-row: auto/span 2;
 }
 
 .study-container:nth-child(1) {
@@ -248,9 +273,12 @@ header {
 
 .study-box-contain {
     padding: 0.1rem 0.1rem 0.5rem;
-    border: 1px solid rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     text-align: center;
     border-radius: 1.5rem;
+
+    background-color: var(--light-body-color);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
     /* display: flex;
     flex-direction: column;
     align-items: center;
@@ -725,7 +753,7 @@ header {
 
 
 .card-third-tech {
-    background-color: #07AC4F;
+    background-color: #ff5d01;
     height: 100%;
 
     display: flex;
