@@ -254,7 +254,7 @@ header {
     grid-column: auto/span 2;
     grid-row: auto/span 3;
 
-    
+    font-size: 0.97rem;
 }
 
 .school-card{
@@ -272,17 +272,17 @@ header {
 }
 
 .study-box-contain {
-    padding: 0.1rem 0.1rem 0.5rem;
+    padding: 0.2rem 1rem 0.2rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    text-align: center;
+    /* text-align: center; */
     border-radius: 1.5rem;
 
     background-color: var(--light-body-color);
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
-    /* display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; */
+    justify-content: center;
 
     &:hover {
         background-color: var(--blue);
@@ -819,4 +819,14 @@ body:not(:hover) .card-tech {
     filter: grayscale(100%);
 }
 
+.box-contact p, .box-experience p, .box-projects p{
+    margin: 0;
+}
 
+.box-experience{
+    padding: 1.6rem;
+}
+
+.box-projects{
+    padding: 1.6rem;
+}
