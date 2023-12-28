@@ -610,6 +610,8 @@ header {
     grid-template-rows: 30% 70%;
     justify-items: center;
 
+    border: 1px solid rgba(0, 0, 0, 0.5);
+
     padding: 1rem 0;
 }
 .card-experience p{
@@ -623,7 +625,14 @@ header {
     background-color: var(--light-main-color);
     width: 90%;
     height: 90%;
-    border-radius: 1rem;
+    border-radius: 1rem 1rem 0 0;
+
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.text-experience{
+    background-color: var(--dark-blue);
+    width: 90%;
+    height: 90%;
 }
 
 .box-projects {
