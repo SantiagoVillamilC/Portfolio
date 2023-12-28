@@ -222,7 +222,7 @@ header {
 .box-about {
     background-color: var(--light-main-color);
     border-radius: 1.5rem;
-    grid-column: auto/span 5;
+    grid-column: auto/span 6;
     grid-row: auto/span 4;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
@@ -275,7 +275,7 @@ header {
     padding: 0.2rem 1rem 0.2rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
     /* text-align: center; */
-    border-radius: 1.5rem;
+    border-radius: 1rem;
 
     background-color: var(--light-body-color);
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
@@ -573,7 +573,7 @@ header {
 .box-contact {
     background-color: var(--light-main-color);
     border-radius: 1.5rem;
-    grid-column: 6/span 3;
+    grid-column: 7/span 3;
     grid-row: auto/span 1;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
@@ -588,11 +588,42 @@ header {
 .box-experience {
     background-color: var(--light-main-color);
     border-radius: 1.5rem;
-    grid-column: 9/span 4;
+    grid-column: 10/span 3;
     grid-row: 1/span 5;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
-    padding: 2rem 1rem 1rem;
+    padding: 1.6rem 1rem 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-experience{
+    width: 100%;
+    height: 100%;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    background-color: var(--light-body-color);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+
+    display: grid;
+    grid-template-rows: 30% 70%;
+    justify-items: center;
+
+    padding: 1rem 0;
+}
+.card-experience p{
+    text-align: center;
+}
+.image-experience{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--light-main-color);
+    width: 90%;
+    height: 90%;
+    border-radius: 1rem;
 }
 
 .box-projects {
@@ -603,6 +634,18 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
     padding: 2rem 1rem 1rem;
+}
+
+.box-config{
+    background-color: var(--dark-main-color);
+    border-radius: 1.5rem;
+    grid-column: 9/span 1;
+    grid-row: 5/span 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .box-actual {
@@ -821,10 +864,6 @@ body:not(:hover) .card-tech {
 
 .box-contact p, .box-experience p, .box-projects p{
     margin: 0;
-}
-
-.box-experience{
-    padding: 1.6rem;
 }
 
 .box-projects{
