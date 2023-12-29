@@ -253,7 +253,6 @@ header {
 .card-about{
     grid-column: auto/span 2;
     grid-row: auto/span 3;
-
     font-size: 0.97rem;
 }
 
@@ -606,23 +605,24 @@ header {
     background-color: var(--light-body-color);
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
 
-    /* display: grid;
-    grid-template-rows: 30% 70%;
-    justify-items: center; */
-    display: flex;
+    display: grid;
+    grid-template-rows: 25% 75%;
+    justify-items: center;
+    /* display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     
     border: 1px solid rgba(0, 0, 0, 0.3);
 
-    padding: 1rem 0;
+    padding: 1rem 0 1rem;
 }
 /* .card-experience p{
     text-align: center;
 } */
 
-.card-jobs{
-    /* background-color: #07AC4F; */
+/* .card-jobs{
+    background-color: #07AC4F;
     height: 100%;
     width: 90%;
 
@@ -633,47 +633,67 @@ header {
     border: 1px solid rgba(0, 0, 0, 0.1);
 
     border-radius: 0.3rem;
-}
+} */
 .image-experience{
     display: flex;
     align-items: center;
     justify-content: center;
 
     background-color: var(--light-main-color);
-    width: 100%;
+    width: 90%;
     height: 100%;
-    border-radius: 0.3rem 0.3rem 0 0;
+    /* border-radius: 1rem 1rem 0 0; */
+    border-radius: 1rem;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    /* margin-bottom: 1rem; */
 
     /* border: 1px solid rgba(0, 0, 0, 0.1); */
 }
 .text-experience{
-    background-color: var(--light-main-color);
+    /* background-color: var(--light-main-color); */
     width: 100%;
     height: 100%;
     /* position: relative; */
-    border-radius: 0 0 0.3rem 0.3rem;
-
+    border-radius: 0 0 1rem 1rem;
+    margin-top: 1rem;
     /* padding-left: 0.5rem; */
     /* display: flex;
     flex-direction: column;
     align-items: flex-start; */
 }
 .text-experience ul.tech-experience{
-    margin-left: 0.5rem;
+    margin-left: 0.7rem;
     padding: 0;
     font-size: 0.7rem;
 }
+.title-experience{
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+}
 .text-inside-experience{
-    padding-left: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+    font-size: 0.85rem;
 }
 ul.tech-experience li{
     display: inline;
-    background-color: var(--light-body-color);
+    cursor: default;
+    background-color: var(--light-main-color);
     color: var(--dark-main-color);
     /* padding-right: 2%; */
     padding: 1% 2%;
     border-radius: 0.2rem;
     /* margin: 0; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.little-text{
+    margin-top: 1rem;
+    font-size: 0.7rem;
+    width: 100%;
+    text-align: center;
 }
 
 .box-projects {
