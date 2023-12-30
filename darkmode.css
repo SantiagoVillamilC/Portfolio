@@ -48,11 +48,11 @@ body.darkmode{
     }
 }
 
-.darkmode .box-about,.darkmode .box-tech,.darkmode .box-experience,.darkmode .box-projects,.darkmode .box-actual, .darkmode .box-contact{
+.darkmode .box-about,.darkmode .box-tech,.darkmode .box-experience,.darkmode .box-projects,.darkmode .box-actual, .darkmode .box-contact, .darkmode .box-config{
     background-color: var(--dark-main-color);
 }
 
-.darkmode .box-about,.darkmode .box-contact,.darkmode .box-tech,.darkmode .box-experience,.darkmode .box-projects,.darkmode .box-actual{
+.darkmode .box-about,.darkmode .box-contact,.darkmode .box-tech,.darkmode .box-experience,.darkmode .box-projects,.darkmode .box-actual, .darkmode .box-config{
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -70,4 +70,11 @@ body.darkmode{
 
     background-color: var(--dark-body-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.darkmode .card-experience{
+    background-color: var(--dark-body-color);
+}
+.darkmode .image-experience{
+    background-color: var(--light-body-color);
 }

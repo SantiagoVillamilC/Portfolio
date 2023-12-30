@@ -37,7 +37,7 @@ html {
 }
 
 :root {
-    --light-body-color: #F3F5F6;
+    --light-body-color: #E9EAEE;
     --light-main-color: #FFFFFF;
 
     --dark-body-color: #141414;
@@ -643,7 +643,7 @@ header {
     width: 90%;
     height: 100%;
     /* border-radius: 1rem 1rem 0 0; */
-    border-radius: 1rem;
+    border-radius: 0.5rem;
 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
@@ -742,12 +742,16 @@ ul.tech-experience li{
     display: flex;
     gap: 1rem;
     height: 100%;
-    width: 200%;
+    width: 500%;
 }
 .card-project{
     background-color: #07AC4F;
-    width: 17vw;
+    width: 35vw;
     height: 90%;
+    border-radius: 0.5rem;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .box-config{
