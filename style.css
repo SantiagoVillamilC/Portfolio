@@ -222,7 +222,7 @@ header {
 .box-about {
     background-color: var(--light-main-color);
     border-radius: 1.5rem;
-    grid-column: auto/span 6;
+    grid-column: auto/span 8;
     grid-row: auto/span 4;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
@@ -244,26 +244,36 @@ header {
     grid-gap: 1rem; */
 
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     grid-auto-rows: 5rem;
     grid-template-rows: repeat(3, 5rem);
     grid-gap: 1rem;
 }
 
 .card-about{
-    grid-column: auto/span 2;
+    grid-column: auto/span 3;
     grid-row: auto/span 3;
-    font-size: 0.97rem;
+    font-size: 1.1rem;
 }
 
-.school-card{
-    grid-column: auto/span 2;
-    grid-row: auto;
-}
-
-.uni-card{
-    grid-column: 3/span 2;
+.box-school-card{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--light-main-color);
+    grid-column: auto/span 4;
     grid-row: auto/span 2;
+
+    border-radius: 1.5rem;
+    text-align: center;
+}
+
+.box-uni-card{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: var(--light-main-color);
+    grid-column: auto/span 7;
+    grid-row: auto/span 3;
+
+    border-radius: 1.5rem;
 }
 
 .study-container:nth-child(1) {
@@ -272,18 +282,19 @@ header {
 
 .study-box-contain {
     padding: 0.2rem 1rem 0.2rem;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    
+    /* border: 1px solid rgba(0, 0, 0, 0.1); */
     /* text-align: center; */
     border-radius: 1rem;
 
-    background-color: var(--light-body-color);
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    /* background-color: var(--light-body-color); */
+    /* box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1); */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    &:hover {
+    /* &:hover {
         background-color: var(--blue);
         color: var(--light-main-color);
         border-radius: 10px;
@@ -295,13 +306,12 @@ header {
             border-radius: 1.2rem;
             padding: 0.1rem;
             color: var(--dark-main-color);
-            /* transform: scale(2); */
         }
     }
 
     &:not(:hover) {
         transition: all 0.3s ease-in-out;
-    }
+    } */
 }
 
 .box-about p {
@@ -322,15 +332,14 @@ header {
 .box-tech {
     background-color: var(--light-main-color);
     border-radius: 1.5rem;
-    grid-column: auto/span 3;
-    grid-row: auto/span 3;
+    grid-column: auto/span 4;
+    grid-row: auto/span 4;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 1rem 1em 1rem;
+    padding: 1rem 1.5rem 1.4rem;
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-template-rows: repeat(4, minmax(0, 1fr));
-    /* grid-auto-rows: 5rem; */
-    grid-gap: 0.7rem 1rem;
+    grid-gap: 1.2rem 1.2rem;
     position: relative;
     justify-content: center;
     place-items: center;
@@ -342,7 +351,7 @@ header {
 }
 
 .bubble {
-    background-color: var(--red);
+    /* background-color: var(--red); */
     width: 100%;
     height: 100%;
     display: flex;
@@ -572,7 +581,7 @@ header {
 .box-contact {
     background-color: var(--light-main-color);
     border-radius: 1.5rem;
-    grid-column: 7/span 3;
+    grid-column: auto/span 4;
     grid-row: auto/span 1;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
@@ -584,7 +593,7 @@ header {
 
 }
 
-.box-experience {
+/* .box-experience {
     background-color: var(--light-main-color);
     border-radius: 1.5rem;
     grid-column: 10/span 3;
@@ -608,32 +617,12 @@ header {
     display: grid;
     grid-template-rows: 25% 75%;
     justify-items: center;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
     
     border: 1px solid rgba(0, 0, 0, 0.3);
 
     padding: 1rem 0 1rem;
 }
-/* .card-experience p{
-    text-align: center;
-} */
 
-/* .card-jobs{
-    background-color: #07AC4F;
-    height: 100%;
-    width: 90%;
-
-    display: grid;
-    grid-template-rows: 30% 70%;
-    justify-items: center;
-
-    border: 1px solid rgba(0, 0, 0, 0.1);
-
-    border-radius: 0.3rem;
-} */
 .image-experience{
     display: flex;
     align-items: center;
@@ -642,26 +631,16 @@ header {
     background-color: var(--light-main-color);
     width: 90%;
     height: 100%;
-    /* border-radius: 1rem 1rem 0 0; */
     border-radius: 0.5rem;
 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
-    /* margin-bottom: 1rem; */
-
-    /* border: 1px solid rgba(0, 0, 0, 0.1); */
 }
 .text-experience{
-    /* background-color: var(--light-main-color); */
     width: 100%;
     height: 100%;
-    /* position: relative; */
     border-radius: 0 0 1rem 1rem;
     margin-top: 1rem;
-    /* padding-left: 0.5rem; */
-    /* display: flex;
-    flex-direction: column;
-    align-items: flex-start; */
 }
 .text-experience ul.tech-experience{
     margin-left: 0.7rem;
@@ -683,10 +662,8 @@ ul.tech-experience li{
     cursor: default;
     background-color: var(--light-main-color);
     color: var(--dark-main-color);
-    /* padding-right: 2%; */
     padding: 1% 2%;
     border-radius: 0.2rem;
-    /* margin: 0; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .little-text{
@@ -694,9 +671,9 @@ ul.tech-experience li{
     font-size: 0.7rem;
     width: 100%;
     text-align: center;
-}
+} */
 
-.box-projects {
+/*.box-projects {
     background-color: var(--light-main-color);
     border-radius: 1.5rem;
     grid-column: 1/span 8;
@@ -705,39 +682,36 @@ ul.tech-experience li{
 
     padding: 2rem 1rem 1rem;
 
-    /* display: flex; */
-
     overflow-x: auto;
     overflow-y: hidden;
 
     &::-webkit-scrollbar {
-        /* width: 1px; */
         height: 8px;
-        /* Ancho de la barra de desplazamiento */
+        Ancho de la barra de desplazamiento
     }
     
-    /* Estilos para el riel de la barra de desplazamiento */
+    Estilos para el riel de la barra de desplazamiento 
     &::-webkit-scrollbar-track {
         background-color: transparent;
-        /* Color del riel de la barra de desplazamiento */
+        Color del riel de la barra de desplazamiento 
     }
     
-    /* Estilos para el pulgar de la barra de desplazamiento */
+    Estilos para el pulgar de la barra de desplazamiento
     &::-webkit-scrollbar-thumb {
         background-color: var(--blue);
-        /* Color del pulgar de la barra de desplazamiento */
+        Color del pulgar de la barra de desplazamiento
         border-radius: 10px;
-        /* Bordes redondeados del pulgar */
+        Bordes redondeados del pulgar
         border-radius: 35px;
     }
     
-    /* Cambiar el color del pulgar al pasar el ratón sobre él */
+    Cambiar el color del pulgar al pasar el ratón sobre él
     &::-webkit-scrollbar-thumb:hover {
         background-color: var(--dark-blue);
         transition: 0.5 all;
     }
-}
-.container-cards-project{
+}*/
+/* .container-cards-project{
     margin-top: 1%;
     display: flex;
     gap: 1rem;
@@ -752,13 +726,15 @@ ul.tech-experience li{
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-}
+} */
 
 .box-config{
+    position: sticky;
+    top: 30vh;
     background-color: var(--light-main-color);
     border-radius: 1.5rem;
-    grid-column: 9/span 1;
-    grid-row: 5/span 1;
+    grid-column: auto/span 1;
+    grid-row: 5/span 3;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
     display: flex;

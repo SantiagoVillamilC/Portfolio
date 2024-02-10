@@ -48,7 +48,7 @@ body.darkmode{
     }
 }
 
-.darkmode .box-about,.darkmode .box-tech,.darkmode .box-experience,.darkmode .box-projects,.darkmode .box-actual, .darkmode .box-contact, .darkmode .box-config{
+.darkmode .box-about,.darkmode .box-tech,.darkmode .box-experience,.darkmode .box-projects,.darkmode .box-actual, .darkmode .box-contact, .darkmode .box-config, .darkmode .box-school-card, .darkmode .box-uni-card{
     background-color: var(--dark-main-color);
 }
 
