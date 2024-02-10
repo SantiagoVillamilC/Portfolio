@@ -347,7 +347,8 @@ header {
 
 .hability-tech {
     grid-column: auto/span 4;
-    font-size: 1.5em;
+    font-size: 2rem;
+    letter-spacing: 1.5;
 }
 
 .bubble {
@@ -578,11 +579,22 @@ header {
     pointer-events: auto;
 }
 
+.container-box-contact{
+    /* background-color: #07AC4F; */
+    grid-column: auto/span 4;
+    grid-row: auto/span 2;
+
+    display: grid;
+    grid-auto-rows: 5rem;
+    grid-gap: 1.25rem;
+    position: relative;
+}
 .box-contact {
+    position: sticky;
+    top: 1.25rem;
     background-color: var(--light-main-color);
     border-radius: 1.5rem;
-    grid-column: auto/span 4;
-    grid-row: auto/span 1;
+    
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
     display: flex;
