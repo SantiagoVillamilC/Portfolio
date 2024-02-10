@@ -593,19 +593,7 @@ header {
 
 }
 
-/* .box-experience {
-    background-color: var(--light-main-color);
-    border-radius: 1.5rem;
-    grid-column: 10/span 3;
-    grid-row: 1/span 5;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
-    padding: 1.6rem 1rem 1rem;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+/* 
 .card-experience{
     width: 100%;
     height: 100%;
@@ -962,4 +950,46 @@ body:not(:hover) .card-tech {
 
 .box-projects{
     padding: 1.6rem;
+}
+
+.title-bento{
+    margin: 0;
+    grid-row: auto/span 1;
+    grid-column: 2/span 2;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-experience {
+    background-color: var(--light-main-color);
+    border-radius: 1.5rem;
+    grid-column: 2/span 11;
+    grid-row: auto/span 5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    padding: 1.6rem 1rem 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box-projects{
+    background-color: var(--light-main-color);
+    border-radius: 1.5rem;
+    grid-column: 2/span 11;
+    grid-row: auto/span 5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    padding: 1.6rem 1rem 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer{
+    background-color: var(--blue);
+    height: 50vh;
 }
