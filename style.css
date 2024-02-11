@@ -249,6 +249,9 @@ header {
     grid-template-rows: repeat(3, 5rem);
     grid-gap: 1rem;
 }
+.about-text{
+    letter-spacing: 1;
+}
 
 .card-about{
     grid-column: auto/span 3;
@@ -999,6 +1002,12 @@ body:not(:hover) .card-tech {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.form-contact{
+    height: 100vh;
+    margin: 2.5% 5.5%;
+    background-color: var(--light-main-color);
 }
 
 footer{
